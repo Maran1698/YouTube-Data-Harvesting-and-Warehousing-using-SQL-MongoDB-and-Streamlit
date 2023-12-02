@@ -184,7 +184,7 @@ def channel_details(channel_id):
 def channels_table():
     mydb = psycopg2.connect(host="localhost",
             user="postgres",
-            password="vigneshd",
+            password="{@password}",
             database= "youtube_data",
             port = "5432"
             )
@@ -249,7 +249,7 @@ def channels_table():
 def playlists_table():
     mydb = psycopg2.connect(host="localhost",
             user="postgres",
-            password="vigneshd",
+            password="{@password}",
             database= "youtube_data",
             port = "5432"
             )
@@ -311,7 +311,7 @@ def videos_table():
 
     mydb = psycopg2.connect(host="localhost",
                 user="postgres",
-                password="vigneshd",
+                password="{@password}",
                 database= "youtube_data",
                 port = "5432"
                 )
@@ -405,7 +405,7 @@ def comments_table():
     
     mydb = psycopg2.connect(host="localhost",
                 user="postgres",
-                password="vigneshd",
+                password="{@password}",
                 database= "youtube_data",
                 port = "5432"
                 )
