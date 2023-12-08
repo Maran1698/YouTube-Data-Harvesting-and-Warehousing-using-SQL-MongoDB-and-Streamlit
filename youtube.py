@@ -28,7 +28,7 @@ def get_channel_info(channel_id):
             
     response1=request.execute()
 
-#the loop function for gettig specific need of the channels 
+#the loop function for gettig specific need from the channels 
     for i in range(0,len(response1["items"])):
         data = dict(
                     Channel_Name = response1["items"][i]["snippet"]["title"],
