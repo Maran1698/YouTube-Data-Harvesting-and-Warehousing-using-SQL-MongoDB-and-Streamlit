@@ -215,7 +215,7 @@ def channels_table():
     coll1 = db["channel_details"]
     for ch_data in coll1.find({},{"_id":0,"channel_information":1}):
         ch_list.append(ch_data["channel_information"])
-    df = pd.DataFrame(ch_list)
+    df = pd.DataFrame(ch_list)  # createing dataframe
 
     #inserting values in channels table
     
